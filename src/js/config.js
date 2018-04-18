@@ -71,7 +71,7 @@ export default {
           {
             id: 'undo',
             className: 'fa fa-undo',
-            command: () => editor.runCommand('core:undo'),
+            command: 'core:undo',
             attributes: {
               'data-tooltip': 'Undo',
               'data-tooltip-pos': 'bottom'
@@ -80,7 +80,7 @@ export default {
           {
             id: 'redo',
             className: 'fa fa-repeat',
-            command: () => editor.runCommand('core:redo'),
+            command: 'core:redo',
             attributes: {
               'data-tooltip': 'Redo',
               'data-tooltip-pos': 'bottom'
@@ -89,7 +89,7 @@ export default {
           {
             id: 'clear',
             className: 'fa fa-trash',
-            command: () => confirm('Are you sure to clean the canvas?') && editor.runCommand('core:canvas-clear'),
+            command: (editor) => confirm('Are you sure to clean the canvas?') && editor.runCommand('core:canvas-clear'),
             attributes: {
               'data-tooltip': 'Clear',
               'data-tooltip-pos': 'bottom'
