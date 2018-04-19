@@ -2,6 +2,7 @@ export default {
   container: '#gjs',
   fromElement: true,
   height: '100%',
+  style: '[mv-app]{min-height:100px}',
   plugins: ['mavoPlugin', 'customHtmlPlugin'],
   layerManager: {
     appendTo: '#layers-container'
