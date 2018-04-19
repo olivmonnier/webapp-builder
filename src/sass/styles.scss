@@ -1,8 +1,9 @@
 @import '../../node_modules/grapesjs/src/styles/scss/main.scss';
-@import '../../node_modules/mavo/src-css/mavo.scss';
 
 // Components
+@import './panels.scss';
 @import './tooltips.scss';
+@import './traits.scss';
 
 html, body {
   margin: 0;
@@ -10,18 +11,6 @@ html, body {
   font-family: Helvetica,sans-serif;
   font-size: .90rem;
 }
-
-/* Panels */
-.gjs-pn-panel {
-  position: relative;
-}
-.gjs-pn-options {
-  right: 0;
-}
-.gjs-pn-views-container {
-  padding-top: 0;
-}
-/***********/
 
 .container {
   height: 100%;
@@ -33,11 +22,11 @@ html, body {
   align-items: center;
   display: flex;
   justify-content: space-between; 
-}
 
-.actions-bar > * {
-  z-index: 4;
-  background-color: transparent !important;
+  > * {
+    z-index: 4;
+    background-color: transparent !important;
+  }
 }
 
 .row {

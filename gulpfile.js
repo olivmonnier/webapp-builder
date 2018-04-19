@@ -38,8 +38,13 @@ const fontPaths = {
 }
 
 const vendorPaths = {
-  src: ['./node_modules/grapesjs/dist/grapes.min.js', './node_modules/mavo/dist/mavo.min.js'],
+  src: ['./node_modules/grapesjs/dist/grapes.min.js'],
   dest: `${dirs.dest}`
+}
+
+const mavoPaths = {
+  src: ['./node_modules/mavo/dist/mavo.css', './node_modules/mavo/dist/mavo.min.js'],
+  dest: `${dirs.dest}/mavo`
 }
 
 gulp.task('clean', () => {
@@ -89,6 +94,11 @@ gulp.task('fonts', () => {
     .pipe(gulp.dest(fontPaths.dest));
 });
 
+gulp.task('mavo', () => {
+  return gulp.src(mavoPaths.src)
+    .pipe(gulp.dest(mavoPaths.dest));
+});
+
 gulp.task('connect', () => {
   connect.server({
     root: dirs.dest,
@@ -120,7 +130,7 @@ gulp.task('watch', () => {
 gulp.task('build', () => {
   return runSequence(
     'clean',
-    ['js', 'sass', 'vendors', 'view', 'fonts']
+    ['js', 'sass', 'vendors', 'view', 'fonts', 'mavo']
   )
 });
 

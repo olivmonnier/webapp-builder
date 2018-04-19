@@ -1,0 +1,15 @@
+.gjs-trt-trait {
+  flex-direction: column;
+
+  > * {
+    width: auto !important;
+  }
+}
+
+.gjs-field-checkbox {
+  align-self: flex-start;
+}
+
+.gjs-trt-label {
+  line-height: 20px;
+}

@@ -89,7 +89,7 @@ export default {
           {
             id: 'clear',
             className: 'fa fa-trash',
-            command: (editor) => confirm('Are you sure to clean the canvas?') && editor.runCommand('core:canvas-clear'),
+            command: editor => confirm('Are you sure to clean the canvas?') && editor.runCommand('core:canvas-clear'),
             attributes: {
               'data-tooltip': 'Clear',
               'data-tooltip-pos': 'bottom'
@@ -109,7 +109,7 @@ export default {
           {
             id: 'preview',
             className: 'fa fa-eye',
-            command: 'preview',
+            command: editor => editor.runCommand('preview-app'),
             context: 'preview',
             attributes: {
               'data-tooltip': 'Preview',
