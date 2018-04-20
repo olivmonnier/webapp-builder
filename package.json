@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "grapesjs": "^0.14.9",
+    "grapesjs-blocks-basic": "^0.1.7",
+    "grapesjs-plugin-forms": "^0.3.6",
     "mavo": "^0.1.5"
   },
   "devDependencies": {

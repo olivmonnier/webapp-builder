@@ -3,7 +3,7 @@ export default {
   fromElement: true,
   height: '100%',
   style: '[mv-app]{min-height:100px}',
-  plugins: ['mavoPlugin', 'customHtmlPlugin'],
+  plugins: ['gjs-blocks-basic', 'gjs-plugin-forms', 'mavoPlugin', 'customHtmlPlugin'],
   layerManager: {
     appendTo: '#layers-container'
   },

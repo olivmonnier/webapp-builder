@@ -3,6 +3,7 @@ export default function (editor, config = {}) {
 
   BlockManager.add('app-container', {
     attributes: { class: 'fa fa-caret-square-o-right' },
+    category: 'Advanced',
     label: 'App Container',
     content: '<div mv-app></div>'
   });

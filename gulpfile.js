@@ -38,7 +38,11 @@ const fontPaths = {
 }
 
 const vendorPaths = {
-  src: ['./node_modules/grapesjs/dist/grapes.min.js'],
+  src: [
+    './node_modules/grapesjs/dist/grapes.min.js', 
+    './node_modules/grapesjs-blocks-basic/dist/grapesjs-blocks-basic.min.js',
+    './node_modules/grapesjs-plugin-forms/dist/grapesjs-plugin-forms.min.js'
+  ],
   dest: `${dirs.dest}`
 }
 
