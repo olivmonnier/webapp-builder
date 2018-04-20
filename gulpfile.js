@@ -107,24 +107,9 @@ gulp.task('connect', () => {
 });
 
 gulp.task('watch', () => {
-  const babelWatcher = gulp.watch(`${dirs.src}/**/*.js`, ['js']);
-  const sassWatcher = gulp.watch(`${dirs.src}/**/*.scss`, ['sass']);
-  const viewWatcher = gulp.watch(`${dirs.src}/**/*.html`, ['view']);
-
-  babelWatcher.on('change', function(path, stats) {
-    connect.reload();
-    console.log(`[JS] ${path.path} was changed`);
-  });
-
-  sassWatcher.on('change', function (path, stats) {
-    connect.reload();
-    console.log(`[SASS] ${path.path} was changed`);
-  });
-
-  viewWatcher.on('change', function (path, stats) {
-    connect.reload();
-    console.log(`[HTML] ${path.path} was changed`);
-  });
+  gulp.watch(`${dirs.src}/**/*.js`, ['js']);
+  gulp.watch(`${dirs.src}/**/*.scss`, ['sass']);
+  gulp.watch(`${dirs.src}/**/*.html`, ['view']);
 });
 
 gulp.task('build', () => {

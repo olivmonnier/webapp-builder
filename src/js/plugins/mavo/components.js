@@ -13,8 +13,18 @@ export default function (editor, config = {}) {
             name: 'property'
           },
           {
+            type: 'input',
+            label: 'Customize how property is edited',
+            name: 'mv-edit'
+          },
+          {
+            type: 'input',
+            label: 'Hide or show element by condition',
+            name: 'mv-if'
+          },
+          {
             type: 'checkbox',
-            label: 'Repeatable',
+            label: 'Become a collection',
             name: 'mv-multiple'
           },
           {
@@ -24,7 +34,7 @@ export default function (editor, config = {}) {
           },
           {
             type: 'select',
-            label: 'Order when added',
+            label: 'Sort collection when new item added',
             name: 'mv-order',
             default:  'desc',
             options: [
@@ -54,12 +64,12 @@ export default function (editor, config = {}) {
           },
           {
             type: 'select',
-            label: 'Mode',
-            name: 'mv-mode',
-            default: 'edit',
+            label: 'Storage',
+            name: 'mv-storage',
+            default: 'none',
             options: [
-              { name: 'Edit', value: 'edit' },
-              { name: 'Read', value: 'read' }
+              { name: 'none', value: 'none' },
+              { name: 'local', value: 'local' }
             ]
           }
         ]
