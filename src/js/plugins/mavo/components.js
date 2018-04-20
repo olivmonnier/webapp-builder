@@ -21,10 +21,10 @@ export default function (editor, config = {}) {
             type: 'select',
             label: 'Mode',
             name: 'mv-mode',
-            default: 'read',
+            default: 'edit',
             options: [
-              { name: 'read', value: 'read' },
-              { name: 'edit', value: 'edit' }
+              { name: 'edit', value: 'edit' },
+              { name: 'read', value: 'read' }
             ]
           },
           {
