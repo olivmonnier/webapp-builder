@@ -2045,6 +2045,10 @@ graceful-fs@~1.2.0:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-1.2.3.tgz#15a4806a57547cb2d2dbf27f42e89a8c3451b364"
 
+grapesjs-blocks-basic@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/grapesjs-blocks-basic/-/grapesjs-blocks-basic-0.1.7.tgz#1c6b0c8134d159ff6b1091c0589a69fda0d77711"
+
 grapesjs-plugin-forms@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/grapesjs-plugin-forms/-/grapesjs-plugin-forms-0.3.6.tgz#c55ee38ad74e2935e1e279deb0bca45ec0b1d301"
